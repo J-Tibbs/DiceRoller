@@ -119,6 +119,7 @@ fun Roll_button(
 
 
         Button(onClick = { result = calculateRoll(amountInput.toIntOrNull() ?: 0, maxAmount.toIntOrNull() ?: 6) },
+            interactionSource = interactionSource,
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color.Transparent
             ),
